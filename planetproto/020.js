@@ -1,0 +1,36 @@
+/*
+ * Okay, prototypes are REALLY cool. They are brand new and not spported by all 
+ * browsers (yet), so shouldn't be used in front-end production code yet.
+ */
+
+// -> Create a machine object
+//    with a property motors = 4
+const machine = { motors: 4 }
+
+// -> Create a robot object
+//    with a property friendly = true
+const robot = { friendly: true }
+
+// -> Create a robby object
+const robby = {}
+
+// -> Make machine the prototype of robot
+robot.__proto__ = machine;
+
+// -> Make robot the prototype of robby
+robby.__proto__ = robot;
+
+// -> What is `robby.motors`?
+claim(robby.motors, 4);
+
+// -> What is `robby.friendly`?
+claim(robby.friendly, true);
+
+
+// ------------------------------------------------
+// Common JS exports for verification, don't modify
+module.exports = {
+	machine: machine,
+	robot:   robot,
+	robby:   robby
+}
