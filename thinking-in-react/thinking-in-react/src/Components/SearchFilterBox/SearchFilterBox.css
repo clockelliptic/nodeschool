@@ -1,0 +1,26 @@
+.SearchBoxContainer{
+    background-color: #141414;
+    max-width: 256px;
+    height:100%;
+    min-height: 256px;
+    padding: 24px;
+}
+
+.SearchInput{
+    height: 32px;
+    border: 2px #848484 solid;
+    background-color: #141414;
+    color: #f4f4f4;
+    padding:4px;
+    font: 400 16px "Segoe UI";
+    width: 248px;
+    outline: none;
+}
+
+.SearchInput:focus, .SearchInput:focus:hover{
+    border: 2px #09d3ac solid;
+}
+
+.SearchInput:hover{
+    border: 2px #a4a4a4 solid;
+}

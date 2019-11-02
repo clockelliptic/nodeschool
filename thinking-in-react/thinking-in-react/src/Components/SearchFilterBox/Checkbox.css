@@ -1,0 +1,87 @@
+.CheckBoxContainer{
+    display:block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Hide default checkbox */
+.CheckBoxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* purple: #b200ff */
+
+/* Create custom checkbox */
+.Checkmark{
+    margin-left: 1px;
+    height: 18px;
+    width: 18px;
+    outline: 1px solid #fff;
+    display: inline-block;
+}
+
+.CheckBoxContainer:hover input ~ .Checkmark{
+    background: #b200ff;
+}
+
+.CheckBoxContainer input:checked ~ .Checkmark{
+    background: #b200ff;
+}
+
+.CheckBoxContainer:hover:active input ~ .Checkmark{
+    outline: 2px solid #b200ff;
+}
+
+/* Create checkmark indicator */
+.Checkmark:after{
+    content:"";
+    position: absolute;
+    display: none;
+}
+
+.CheckBoxContainer input:checked ~ .Checkmark:after{
+    display: block;
+}
+
+.CheckBoxContainer .Checkmark:after{
+    left: 6px;
+    top: 10px;
+    width: 6px;
+    height: 12px;
+    border: solid #f4f4f4;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+
+
+/* Style and vertically center checkbox label text */
+.vertical-center-container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -9px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vertical-center{
+    position: absolute;
+}
+
+.CheckBoxLabel{
+    font: 400 14px "Segoe UI";
+    color: #ddd;
+    margin-left: 26px;
+}
