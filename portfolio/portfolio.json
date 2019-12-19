@@ -1,0 +1,16 @@
+{
+    "title":"Nodeschool.io - Workshop Solutions",
+    "description":"My solutions to a several dozen Nodeschool.io workshops covering a wide variety of topics in dev, devops, and general javascript programming.",
+    "tags":{
+       "languages":[
+          "javascript"
+       ],
+       "tooling":[
+          "node.js", "electron.js", "react.js", ""
+       ],
+       "keywords":[
+         "es6+", "workshops", "backend dev", "frontend dev", "fullstack", "practice", "async data"
+       ]
+    },
+    "n_images":1
+ }
